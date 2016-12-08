@@ -8,6 +8,6 @@ class TestController {
 
         def triangle = new Triangle(sideA: 1, sideB: 2, sideC: 4)
         triangle.validate()
-        render "Result of validation: ${triangle.hasErrors()}"
+        render "Result of validation: ${!triangle.hasErrors()}"
     }
 }
